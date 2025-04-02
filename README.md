@@ -27,3 +27,10 @@ Ce projet vise à gérer les informations des étudiants, enseignants, et des co
 
    ```bash
    git clone https://github.com/votre-utilisateur/TP1-.Net.git
+
+Après avoir créé le SchoolContext et ajouté les entités, j'ai généré la migration initiale en utilisant la commande suivante :
+dotnet ef migrations add InitialCreate
+
+Ensuite, j'ai appliqué cette migration à la base de données avec la commande :
+dotnet ef database update
+Cela a permis de créer les relations et de mettre à jour la structure de la base de données en fonction des entités définies. Enfin, j'ai testé les API REST que j'avais développées pour m'assurer que tout fonctionnait correctement.
